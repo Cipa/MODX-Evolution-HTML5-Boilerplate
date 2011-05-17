@@ -38,7 +38,33 @@ Installation:
         return ob_get_clean();
     ?>
     
-Put the [[Include? &tpl=`site/home.tpl`]] in your home template(modify the existing one or create new one)
+Put [[Include? &tpl=`site/home.tpl`]] in your home template(modify the existing one or create new one)
+
+Home Template Sample:
+--------------------
+
+[[Include? &tpl=`site/parts/top.tpl`]]
+
+<body id="Home">
+
+    <div id="container">
+        <header>
+        
+        </header>
+        
+        <div id="Main" role="main">
+            [*content*]
+        </div>
+        
+        <footer>
+        
+        </footer>
+    </div>
+    
+[[Include? &tpl=`site/parts/bottom.tpl`]]
+    
+</body>
+</html>
 
 
 
