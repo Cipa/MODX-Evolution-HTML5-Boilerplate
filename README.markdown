@@ -16,11 +16,11 @@ Installation:
 * If not root folder edit `RewriteBase /` to `RewriteBase /YOUR_PATH/`
 * Set up a new template named Home and paste the contents of the home.tpl file
     
-    If you prefer keep the templates in files Create a new snippet named Include and paste this::
+    If you prefer keep the templates in files Create a new snippet named Include and paste this:
     
     <?php
-        # Snippet to include template files from file system
-        # USAGE: [[Include? &tpl=`site/home.tpl`]]
+        //Snippet to include template files from file system
+        //USAGE: [[Include? &tpl=`site/home.tpl`]]
         
         if ( !isset($tpl) || $tpl== "" ) return "Missing Template file!";
         
