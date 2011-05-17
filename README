@@ -9,18 +9,26 @@ First you need to:
       
 Note: if you don't what PHx just replace [(modx_charset:lcase)] with your charset
 
+Optional Packages:
+--------------------
+* Install GetField from http://modx.com/extras/package/getfield
+
 
 Installation:
 --------------------
-* Copy the assets folder in your MODX installation
-* If not root folder edit `RewriteBase /` to `RewriteBase /YOUR_PATH/`
+* Copy the assets folder and files in your MODX installation (make sure you don't overwrite the assets folder)
+* If not root folder edit "RewriteBase /" to "RewriteBase /YOUR_PATH/"
 * Set up a new template named Home and paste the contents of the home.tpl file
-    
-    If you prefer keep the templates in files Create a new snippet named Include and paste this:
+* Create a new snippet named Include and paste this code:
     
     <?php
-        //Snippet to include template files from file system
-        //USAGE: [[Include? &tpl=`site/home.tpl`]]
+        /*
+        
+        Snippet to include template files from file system. 
+        Templates and templates resources are usually set up in assets/template/your-theme-name
+        USAGE: [[Include? &tpl=`site/home.tpl`]]
+        
+        */
         
         if ( !isset($tpl) || $tpl== "" ) return "Missing Template file!";
         
@@ -30,5 +38,10 @@ Installation:
         return ob_get_clean();
     ?>
     
-    
-    Don't forget to put the [[Include? &tpl=`site/home.tpl`]] in your template
+Put the [[Include? &tpl=`site/home.tpl`]] in your home template(modify the existing one or create new one)
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+    <script>window.jQuery || document.write("<script src='assets/templates/site/js/libs/jquery-1.6.1.min.js'>\x3C/script>")</script>
