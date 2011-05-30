@@ -4,7 +4,7 @@
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="{{CultureKey}}"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="{{CultureKey}}"> <!--<![endif]-->
 <head>
-    <base href="[(site_url)]"></base>
+    <base href="[(site_url)]">
     <meta charset="[(modx_charset:lcase)]">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 

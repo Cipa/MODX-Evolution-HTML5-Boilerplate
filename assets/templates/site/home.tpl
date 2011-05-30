@@ -6,9 +6,11 @@
         <header>
         
         </header>
+        
         <div id="Main" role="main">
             [*content*]
         </div>
+        
         <footer>
         
         </footer>
