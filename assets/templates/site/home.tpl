@@ -2,9 +2,9 @@
 
 <body id="Home">
 
-    <div id="container">
+    <div id="Container">
         <header>
-        
+            
         </header>
         
         <div id="Main" role="main">
