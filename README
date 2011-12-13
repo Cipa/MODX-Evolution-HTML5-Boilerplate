@@ -20,6 +20,9 @@ Installation:
 * Copy the assets folder and files in your MODX installation (make sure you don't overwrite the assets folder)
 * If not root folder edit "RewriteBase /" to "RewriteBase /YOUR_PATH/"
 * Set up a new template named Home and paste the contents of the home.tpl file
+        
+        OR
+
 * Create a new snippet named Include and paste this code:
     
     <?php
@@ -46,14 +49,14 @@ Home Template Sample:
 
 [[Include? &tpl=`site/parts/top.tpl`]]
 
-<body id="Home">
+<body id="template3">
 
     <div id="container">
         <header>
         
         </header>
         
-        <div id="Main" role="main">
+        <div id="main" role="main">
             [*content*]
         </div>
         
