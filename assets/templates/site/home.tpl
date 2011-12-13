@@ -1,13 +1,13 @@
 [[Include? &tpl=`site/parts/top.tpl`]]
 
-<body id="Home">
+<body id="template[[GetField? &field=`template`]]">
 
-    <div id="Container">
+    <div id="container">
         <header>
             
         </header>
         
-        <div id="Main" role="main">
+        <div id="main" role="main">
             [*content*]
         </div>
         
