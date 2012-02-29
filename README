@@ -1,4 +1,4 @@
-NOTE: This is stripped down version of the HTML5 Boilerplate. Consider this a personal starting point for my projects. If you feel the need to add more functionality please submit your requests. For a full HTML5 Boilerplate implementation see https://github.com/smooth-graphics/modx-boilerplate-evo
+NOTE: This is stripped down version of the HTML5 Boilerplate with Metal CSS Responsive Grid support(http://cipalabs.com/projects/metal/). Consider this a personal starting point for my projects. If you feel the need to add more functionality please submit your requests. For a full HTML5 Boilerplate implementation see https://github.com/smooth-graphics/modx-boilerplate-evo
 
 
 First you need to:
@@ -43,32 +43,6 @@ Installation:
     ?>
     
 Put [[Include? &tpl=`site/home.tpl`]] in your home template(modify the existing one or create new one)
-
-Home Template Sample:
---------------------
-
-[[Include? &tpl=`site/parts/top.tpl`]]
-
-<body id="template3">
-
-    <div id="container">
-        <header>
-        
-        </header>
-        
-        <div id="main" role="main">
-            [*content*]
-        </div>
-        
-        <footer>
-        
-        </footer>
-    </div>
-    
-[[Include? &tpl=`site/parts/bottom.tpl`]]
-    
-</body>
-</html>
 
 
 
