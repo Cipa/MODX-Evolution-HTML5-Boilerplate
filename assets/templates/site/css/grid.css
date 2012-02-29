@@ -1,0 +1,495 @@
+/* 
+    
+    Metal CSS Grid 0.2.1
+    
+    https://github.com/Cipa/Metal-CSS-Grid
+    
+*/
+
+
+/* generic styles */
+
+body {
+    font-size: 1em;
+}
+
+.container{
+    padding: 0 0.625em;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row{
+    clear: both;
+    padding: 0.625em 0;
+}
+
+/* columns styles */
+
+.oneCol, .oneElevenCol, .twoCol, .twoTenCol, .threeCol, .threeNineCol, .fourCol, .fourEightCol, .fiveSevenCol, .extraFive, .sixCol, .sevenFiveCol, .eightFourCol, .nineThreeCol, .tenTwoCol, .elevenOneCol, .twelveCol{
+    float: left;
+    position: relative;
+    padding: 0 0.625em;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.oneCol, .oneElevenCol{
+    width: 8.33333333%;
+}
+
+
+.twoCol, .twoTenCol{
+    width: 16.6666667%;
+}
+
+.threeCol, .threeNineCol{
+    width: 25%;
+}
+
+.fourCol, .fourEightCol{
+    width: 33.3333333%;
+}
+
+.fiveSevenCol{
+    width: 41.66666663%;
+}
+
+.sixCol{
+    width: 50%;
+}
+
+.sevenFiveCol{
+    width: 58.33333333%;
+}
+
+.eightFourCol{
+    width: 66.6666667%;
+}
+
+.nineThreeCol{
+    width: 75%;
+}
+
+.tenTwoCol{
+    width: 83.3333333%;
+}
+
+.elevenOneCol{
+    width: 91.66666667%;
+}
+
+.twelveCol{
+    width: 100%;
+}
+
+
+/* extra five*/
+
+.extraFive{
+    width: 20%;
+}
+
+
+/*grid in grid*/
+
+.hasGrid, .hasGrid>.isGrid{ /* remove the container padding and the grid in grid container*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hasGrid>*{ /* add padding to all the first elements - this is needed to re-set the padding */
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+}
+
+
+/* objects */
+
+img, object, embed {
+    max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+/*
+
+    MEDIA QUERIES
+    
+    
+    DEVICE PROPERTIES
+    
+     - iPad: 1024x768
+     - iPhone: 960x640
+
+*/
+
+/* ! 1280px */
+@media screen and (min-width: 1280px) {
+
+    /* define specific resolution styles */
+
+}
+
+/* ! 1024px */
+@media screen and (max-width: 1024px) {
+    
+    /* define specific resolution styles */
+
+}
+
+/* ! 960px */
+@media screen and (max-width: 960px) {
+    
+    /* generic styles */
+    
+    body {
+	   font-size: 0.99em;
+	}
+
+    .container{
+        padding: 0 0.6em;
+    }
+    
+    .row{
+        padding: 0.6em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 16.6666667%;
+    }
+    
+    .oneCol:nth-child(6n+1){
+        clear: both;
+    }
+    
+    .twoCol{
+        width: 33.3333333%;
+    }
+    
+    .twoCol:nth-child(3n+1){
+        clear: both;
+    }
+    
+    .threeCol{
+        width: 50%;
+    }
+    
+    .threeCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .fourCol{
+        width: 100%;
+    }
+    
+    .sixCol{
+        width: 100%;
+    }
+    
+    /* extra five*/
+
+    .extraFive{
+        width: 100%;
+    }
+
+
+    /* un-equal width columns */
+    
+    /* 1>2 */
+    .oneElevenCol{
+        width: 16.6666667%;
+    }
+    
+    /* 11>10 */
+    .elevenOneCol{
+        width: 83.3333333%;
+    }
+    
+    /* 2>3 */
+    .twoTenCol{
+        width: 25%;
+    }
+    
+    /* 10>9 */
+    .tenTwoCol{
+        width: 75%;
+    }
+    
+    /* 3>4 */
+    .threeNineCol{
+        width: 33.3333333%;
+    }
+    
+    /* 9>8 */
+    .nineThreeCol{
+        width: 66.6666667%;
+    }
+    
+    /* 4>5 */
+    .fourEightCol{
+        width: 41.66666663%;
+    }
+    
+    /* 8>7 */
+    .eightFourCol{
+        width: 58.33333333%;
+    }
+    
+    /* 5>6 */
+    .fiveSevenCol{
+        width: 50%;
+    }
+    
+    /* 7>6 */
+    .sevenFiveCol{
+        width: 50%;
+    }
+
+}
+
+/* ! 768px */
+@media screen and (max-width: 768px) {
+    
+    /* generic changes */
+    
+    body {
+	   font-size: 0.98em;
+	}
+
+    .container{
+        padding: 0 0.55em;
+    }
+    
+    .row{
+        padding: 0.55em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 33.3333333%;
+    }
+    
+    .oneCol:nth-child(3n+1){
+        clear: both;
+    } 
+    
+    .twoCol{
+        width: 50%;
+    }
+    
+     /*reset from previous*/
+    .twoCol:nth-child(3n+1){
+        clear: none;
+    }
+    
+    .twoCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .threeCol{
+        width: 100%;
+    }
+    
+    
+    /* un-equal width columns */
+    
+    /* 1>3 */
+    .oneElevenCol{
+        width: 25%;
+    }
+    
+    /* 11>9 */
+    .elevenOneCol{
+        width: 75%;
+    }
+    
+    /* 2>4 */
+    .twoTenCol{
+        width: 33.3333333%;
+    }
+    
+    /* 10>8 */
+    .tenTwoCol{
+        width: 66.6666667%;
+    }
+    
+    /* 3>5 */
+    .threeNineCol{
+        width: 41.66666663%;
+    }
+    
+    /* 9>7 */
+    .nineThreeCol{
+        width: 58.33333333%;
+    }
+    
+    /* 4>6 */
+    .fourEightCol{
+        width: 50%;
+    }
+    
+    /* 8>6 */
+    .eightFourCol{
+        width: 50%;
+    }
+    
+    /* 5>full */
+    .fiveSevenCol{
+        width: 100%;
+    }
+    
+    /* 7>full */
+    .sevenFiveCol{
+        width: 100%;
+    }
+
+}
+
+/* ! 640px */
+@media screen and (max-width: 640px) {
+
+    /* generic changes */
+    
+    body {
+	   font-size: 0.97em;
+	}
+
+    .container{
+        padding: 0 0.45em;
+    }
+    
+    .row{
+        padding: 0.45em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 50%;
+    }
+    
+    /*reset from previous*/
+    .oneCol:nth-child(3n+1){
+        clear: none;
+    } 
+    
+    .oneCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .twoCol{
+        width: 100%;
+    }
+    
+    /* un-equal width columns */
+    
+    /* 1>4 */
+    .oneElevenCol{
+        width: 33.3333333%;
+    }
+    
+    /* 11>8 */
+    .elevenOneCol{
+        width: 66.6666667%;
+    }
+    
+    /* 2>5 */
+    .twoTenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 10>7 */
+    .tenTwoCol{
+        width: 58.33333333%;
+    }
+    
+    /* 3>6 */
+    .threeNineCol{
+        width: 50%;
+    }
+    
+    /* 9>6 */
+    .nineThreeCol{
+        width: 50%;
+    }
+    
+    /* 4>6 */
+    .fourEightCol{
+        width: 100%;
+    }
+    
+    /* 8>6 */
+    .eightFourCol{
+        width: 100%;
+    }
+
+}
+
+/* ! 480px */
+@media screen and (max-width: 480px) {
+    
+    /* generic changes */
+    
+    body {
+	   font-size: 0.96em;
+	}
+
+    .container{
+        padding: 0 0.35em;
+    }
+    
+    .row{
+        padding: 0.35em 0;
+    }
+    
+     /* equal width columns */
+    
+    .oneCol{
+        width: 100%;
+    }
+    
+    /* un-equal width columns */
+    
+    /* 1>5 */
+    .oneElevenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 11>7 */
+    .elevenOneCol{
+        width: 58.33333333%;
+    }
+    
+    /* 2>6 */
+    .twoTenCol{
+        width: 50%;
+    }
+    
+    /* 10>6 */
+    .tenTwoCol{
+        width: 50%;
+    }
+    
+    /* 3>full */
+    .threeNineCol{
+        width: 100%;
+    }
+    
+    /* 9>full */
+    .nineThreeCol{
+        width: 100%;
+    }
+
+}
