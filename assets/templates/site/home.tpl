@@ -10,12 +10,13 @@
             </nav>
         </header>
         
-        <div id="main" role="main">
+        <div id="main">
+            <h1>[*pagetitle*]</h1>
             [*content*]
         </div>
         
         <footer>
-        
+            
         </footer>
     </div>
     
