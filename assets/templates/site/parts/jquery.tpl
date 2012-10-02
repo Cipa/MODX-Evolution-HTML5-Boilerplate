@@ -1,2 +1,2 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/templates/site/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+    <script>window.jQuery || document.write("<script src='assets/templates/site/js/vendor/jquery-1.8.2.min.js'>\x3C/script>")</script>

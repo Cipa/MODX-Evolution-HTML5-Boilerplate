@@ -2,6 +2,8 @@
 
 <body id="template[[GetField? &field=`template`]]">
 
+    [[Include? &tpl=`site/parts/chrome-frame.tpl`]]
+
     <div id="container">
         <header>
             <a id="logo" href="[~[(site_start)]~]">[(site_name)]</a>
@@ -16,7 +18,7 @@
         </div>
         
         <footer>
-            
+            Footer
         </footer>
     </div>
     
