@@ -2,6 +2,7 @@
 
 <body id="template[[GetField? &field=`template`]]">
 
+[[Include? &tpl=`site/parts/chrome-frame.tpl`]]
     
 <div class="container">
 
