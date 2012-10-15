@@ -9,17 +9,16 @@
     
     <meta charset="[(modx_charset:lcase)]">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>[(site_name)] | [*pagetitle*]</title>
     
     <meta name="description" content="[*description*]">
     <meta name="author" content="[(site_name)]">
+    <meta name="viewport" content="width=device-width">
     
     <link rel="stylesheet" href="assets/templates/site/css/normalize.css">
-    <link rel="stylesheet" href="assets/templates/site/css/grid.css">
-    <link rel="stylesheet" href="assets/templates/site/css/style.css">
+    <link rel="stylesheet" href="assets/templates/site/css/main.css">
     
-    <script src="assets/templates/site/js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="assets/templates/site/js/vendor/modernizr-2.6.2.min.simple.js"></script>
     
 </head>
