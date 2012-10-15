@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width">
     
     <link rel="stylesheet" href="assets/templates/site/css/normalize.css">
+    <link rel="stylesheet" href="assets/templates/site/css/grid.css">
     <link rel="stylesheet" href="assets/templates/site/css/main.css">
     
     <script src="assets/templates/site/js/vendor/modernizr-2.6.2.min.simple.js"></script>
